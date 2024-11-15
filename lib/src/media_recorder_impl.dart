@@ -28,7 +28,7 @@ class MediaRecorderWeb extends MediaRecorder {
     Function(dynamic blob, bool isLastOne)? onDataChunk,
     String mimeType = 'video/webm',
     int timeSlice = 1000,
-    videoKeyFrameIntervalCount = 2,
+    videoKeyFrameIntervalCount = 5,
   }) {
     var _native = stream as MediaStreamWeb;
     _recorder = web.MediaRecorder(
